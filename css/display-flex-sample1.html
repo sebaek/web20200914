@@ -41,12 +41,35 @@
         .ad-container {
             width: 200px;
         }
-
+        .sub-menu {
+            position: absolute;
+            display: none;
+            top: 80px;
+            left: 0px;
+            padding: 10px;
+            background-color: white;
+            border-top: 5px solid green;
+        }
+        .menu-item {
+            position: relative;
+        }
+        .menu-item:hover .sub-menu {
+            display: block;
+        }
     </style>
 </head>
 <body>
     <div class="my-menu">
-        <div class="menu-item">TUTORIALS <i class="fas fa-caret-down"></i></div>
+        <div class="menu-item">
+            TUTORIALS <i class="fas fa-caret-down"></i>
+            <div class="sub-menu">
+                <div class="sub-item">Lorem.</div>
+                <div class="sub-item">Voluptates!</div>
+                <div class="sub-item">Laudantium.</div>
+                <div class="sub-item">Illo?</div>
+                <div class="sub-item">Beatae!</div>
+            </div>
+        </div>
         <div class="menu-item">REFERENCES <i class="fas fa-caret-down"></i></div>
         <div class="menu-item">EXAMPLES <i class="fas fa-caret-down"></i></div>
         <div class="menu-item">EXERCIES <i class="fas fa-caret-down"></i></div>
