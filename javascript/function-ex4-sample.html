@@ -20,13 +20,39 @@
     <input type="text" id="input6"><br>
     <button onclick="subtract()"><i class="fas fa-minus"></i></button>
     <p id="result3"></p>
+
+    <input type="number" id="input7"> <br>
+    <input type="number" id="input8"> <br>
+    <button onclick="add()"><i class="fas fa-plus"></i></button>
+    <p id="result4"></p>
     <script>
+        function add() {
+            var num1 = document.getElementById("input7").value;
+            var num2 = document.getElementById("input8").value;
+            var result = Number(num1) + Number(num2);
+            document.getElementById("result4").innerHTML = result;
+        }
+
         function mutiply() {
             var num1 = document.getElementById("input1").value;
             var num2 = document.getElementById("input2").value;
 
             var result = num1 * num2;
             document.getElementById("result1").innerHTML = result;
+        }
+
+        function divide() {
+            var num1 = document.getElementById("input3").value;
+            var num2 = document.getElementById("input4").value;
+            var result = num1 / num2;
+            document.getElementById("result2").innerHTML = result;
+        }
+
+        function subtract() {
+            var num1 = document.getElementById("input5").value;
+            var num2 = document.getElementById("input6").value;
+            var result = num1 - num2;
+            document.getElementById("result3").innerHTML = result;
         }
     </script>
 </body>
