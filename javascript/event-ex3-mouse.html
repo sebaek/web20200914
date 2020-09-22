@@ -8,6 +8,9 @@
 <body>
     <img id="img1" onmouseout="off()" onmouseover="on()" src="pic_bulboff.gif" alt="">
     <script>
+        function off() {
+            document.getElementById("img1").src = "pic_bulboff.gif";
+        }
         function on() {
             // console.log('on');
             document.getElementById("img1").src = 'pic_bulbon.gif';
