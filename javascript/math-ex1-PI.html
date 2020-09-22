@@ -12,6 +12,12 @@
     <p id="result"></p>
 
     <script>
+        function area() {
+            var r = document.getElementById("input1").value;
+            r = Number(r);
+            var area = r * r * Math.PI;
+            document.getElementById("result").innerHTML = area;
+        }
         function length() {
             var r = document.getElementById("input1").value;
             r = Number(r);
