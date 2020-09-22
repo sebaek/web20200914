@@ -14,16 +14,23 @@
             border-radius: 50%;
             text-align: center;
         }
+        .container {
+            display: flex;
+            justify-content: space-evenly;
+        }
     </style>
 </head>
 <body>
     <button onclick="lotto()">로또!!</button>
-    <div class="number" id="num1"></div>
-    <div class="number" id="num2"></div>
-    <div class="number" id="num3"></div>
-    <div class="number" id="num4"></div>
-    <div class="number" id="num5"></div>
-    <div class="number" id="num6"></div>
+    <div class="container">
+
+        <div class="number" id="num1"></div>
+        <div class="number" id="num2"></div>
+        <div class="number" id="num3"></div>
+        <div class="number" id="num4"></div>
+        <div class="number" id="num5"></div>
+        <div class="number" id="num6"></div>
+    </div>
     <script>
         function getRandomNumber() {
             return Math.floor(Math.random()*45) + 1;
