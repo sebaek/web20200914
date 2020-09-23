@@ -9,8 +9,10 @@
     <div id="result"></div>
     <script>
         var txt = "";
-        for (var j = 1; j <= 9; j++) {
-            txt += "2 &times " + j + " = " + (2*j) + "<br>";
+        for (var i = 2; i <= 9; i++) {
+            for (var j = 1; j <= 9; j++) {
+                txt += i + " &times " + j + " = " + (i*j) + "<br>";
+            }
         }
         document.getElementById('result').innerHTML = txt;
     </script>
