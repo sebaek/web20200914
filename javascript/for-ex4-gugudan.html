@@ -12,13 +12,18 @@
 
     </div>
     <script>
-        var txt = "";
+        function show() {
+            var num = document.getElementById("input1").value;
+            num = Number(num);
+            var txt = "";
 
-        for (var i = 1; i <= 9; i++) {
-            txt += "2 &times; " + i + " = " + (2*i) + "<br>";
+            for (var i = 1; i <= 9; i++) {
+                txt += num + " &times; " + i + " = " + (num*i) + "<br>";
+            }
+
+            document.getElementById("result").innerHTML = txt;
         }
-
-        document.getElementById("result").innerHTML = txt;
+        
 
     </script>
 </body>
