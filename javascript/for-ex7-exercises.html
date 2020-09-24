@@ -14,11 +14,112 @@
         console.log("----문제1------");
         for (var i = 0; i < 5; i++) {
             var txt = "";
-            for (var j = 0; j <= 4; j++) {
+            for (var j = 0; j <= i; j++) {
+                txt += "*";
+            }
+            console.log(txt);
+        }
+
+        console.log("--문제2--");
+        for (var i = 0; i < 5; i++) {
+            var txt = "";
+            for (var j = 0; j < (5-i); j++) {
+                txt += "*";
+            }
+            console.log(txt);
+        }
+
+        console.log("--문제3--");
+        for (var i = 0; i < 5; i++) {
+            var txt = "";
+            for (var j = 0; j <= i; j++) {
+                txt += "*";
+            }
+            for (var j = 0; j < (5-i); j++) {
+                txt += "#";
+            }
+            console.log(txt);
+        }
+
+        console.log("--문제4--");
+        for (var i = 0; i < 5; i++) {
+            var txt = "";
+            for (var j = 0; j <= i; j++) {
+                txt += "#";
+            }
+            for (var j = 0; j < (5-i); j++) {
+                txt += "*";
+            }
+            console.log(txt);
+        }
+
+        console.log("--문제5--");
+        for (var i = 0; i < 5; i++) {
+            var txt = "";
+            for (var j = 0; j < i; j++) {
+                txt += " ";
+            }
+            for (var j = 0; j < (5-i); j++) {
+                txt += "*";
+            }
+            console.log(txt);
+        }
+
+        console.log("----문제6------");
+        for (var i = 0; i < 5; i++) {
+            var txt = "";
+            for (var k = 0; k < (4-i); k++) {
+                txt += " ";
+            }
+            for (var j = 0; j <= i; j++) {
+                txt += "*";
+            }
+            console.log(txt);
+        }
+
+        console.log("----문제7------");
+        for (var i = 0; i < 5; i++) {
+            // console.log("01234");
+            var txt = "";
+            for (var j = 0; j < 5; j++) {
                 txt += j;
             }
             console.log(txt);
         }
+
+        console.log("----문제8------");
+        for (var i = 0; i < 5; i++) {
+            // console.log("01234");
+            var txt = "";
+            for (var j = i; j < i+5; j++) {
+                txt += j;
+            }
+            console.log(txt);
+        }
+
+        console.log("----문제9------");
+        for (var i = 0; i < 5; i++) {
+            // console.log("01234");
+            var txt = "";
+            for (var j = 0; j <= i; j++) {
+                txt += j;
+            }
+            console.log(txt);
+        }
+
+        console.log("----문제10------");
+        var k = 0;
+        for (var i = 0; i < 5; i++) {
+            // console.log("01234");
+            var txt = "";
+            for (var j = 0; j <= i; j++) {
+                txt += (k % 10);
+                k++;
+            }
+            console.log(txt);
+        }
+
+
     </script>
 </body>
 </html>
