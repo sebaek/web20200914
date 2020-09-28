@@ -11,8 +11,14 @@
         var txt = $("#input1").val();
         var li = $("<li />");
         li.text(txt);
+        li.click(function() {
+          $(this).remove();
+        });
         $("#result").append(li);
       });
+      $("#btn2").click(function() {
+        $("#result").empty();
+      })
     });
   </script>
 </head>
