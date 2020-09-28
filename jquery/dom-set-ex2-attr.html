@@ -7,7 +7,11 @@
   </style>
   <script>
     $(document).ready(function() {
-      $("#link1").attr("href", "https://www.google.com");
+      // $("#link1").attr("href", "https://www.google.com");
+
+      $("#input1").keyup(function() {
+        $("#link1").attr("href", $(this).val());
+      });
     });
   </script>
 </head>
