@@ -12,6 +12,9 @@
 
         var btn = $("<button />");
         btn.append($("<i />").addClass("fas fa-minus"));
+        btn.click(function() {
+          $(this).parent().remove();
+        });
 
         li.text($("#input1").val());
         li.append(btn);
